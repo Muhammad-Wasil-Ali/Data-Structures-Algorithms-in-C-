@@ -14,7 +14,7 @@ arr.push_back(118);
 arr.push_back(12);
 arr.push_back(119);arr.push_back(12);
 arr.push_back(220);
-
+arr.pop_back();
 cout<<"size :"<<arr.size()<<endl;
 
 cout<<"capacity :"<<arr.capacity()<<endl;
