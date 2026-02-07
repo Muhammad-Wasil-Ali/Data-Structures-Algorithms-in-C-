@@ -43,7 +43,7 @@ int majorityElementUsingOptimal(vector<int> arr){
 }
 int main(){
     vector<int> arr1={1,2,1,4,2,2,2};
-vector<int> arr2={1,1,1,1,1,1,1,1,4,4,4,4,4,4};
+vector<int> arr2={1,1,1,1,1,1,4,4,4,4,4,4};
     cout<<majorityElementUsingBruteForce(arr1);
     cout<<majorityElementUsingOptimal(arr2);
 
