@@ -4,7 +4,7 @@
 
 using namespace std;
 int main(){
-
+int arr[3]={1,2,3};
     // Time complexity:  measures how much time an algorithm takes to run as the input size grows.
 // It helps us compare algorithms based on speed and efficiency.
 
