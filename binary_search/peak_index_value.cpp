@@ -5,8 +5,8 @@ using namespace std;
 
 int peakIndexValue(vector<int> arr){
 
-int st=0;
-int end=arr.size()-1;
+int st=1;
+int end=arr.size()-2;
 
 while(st<=end){
     int mid= (st+end)/2;

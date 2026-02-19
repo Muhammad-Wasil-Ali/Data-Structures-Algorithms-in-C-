@@ -10,6 +10,7 @@ int rotatedBinarySearch(vector<int> arr,int target){
 
     while(st<=end){
 int mid=(st+end)/2;
+
         if(arr[mid]==target){
             return mid;
         }
@@ -31,9 +32,9 @@ int mid=(st+end)/2;
 }
 int main(){
 
-    vector<int> arr={3,4,5,11,7,0,1,2,6,8};
+    vector<int> arr={3,4,5,6,7,0,1,2};
 
-    cout<<"The target element is on index "<<rotatedBinarySearch(arr,6);
+    cout<<"The target element is on index "<<rotatedBinarySearch(arr,4);
 
     return 0;
 }

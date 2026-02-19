@@ -3,27 +3,26 @@
 #include <vector>
 using namespace std;
 
+
 int singleElementInSortedArrayUsingBruteForce(vector<int> arr){
-    int count=0;
-
-    cout<<arr.size()<<endl;
-    for(int i=0;i<arr.size();i++){
     
-        
+   
 
-        for(int j=0;j<arr.size();j++){
-            if(arr[i]==arr[j]){
-                count++;
-            }
-        }
+ 
+    if(arr.size() == 1 || arr[0] != arr[1]){
+        return arr[0];
+    }
 
-        if(count==1){
+    for(int i = 1; i < arr.size() - 1; i++){
+        if(arr[i] != arr[i-1] && arr[i] != arr[i+1]){
             return arr[i];
-        }else{
-            count=0;
         }
     }
+
+   
+    return arr[arr.size()-1];
 }
+
 
 
 int singleElementInSortedArrayUsingBinarySearch(vector<int> arr){
@@ -32,10 +31,16 @@ int end=arr.size()-1;
 while(st<=end){
     int mid=st+(end-st)/2;
 
+    if(mid==0&& arr[0]!=arr[1]){
+        return arr[mid];
+    }
+    
+    if(mid==end&& arr[end]!=arr[end-1]){
+        return arr[mid];
+    }
     if(arr[mid]!=arr[mid-1]&&arr[mid]!=arr[mid+1]){
         return arr[mid];
     }
-
     if(mid%2==0){
         if(arr[mid]==arr[mid-1]){
             end=mid-1;
@@ -49,7 +54,6 @@ while(st<=end){
             st=mid+1;
         }
     }
-
 }
 }
 int main(){
