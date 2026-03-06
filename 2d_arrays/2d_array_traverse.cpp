@@ -3,7 +3,7 @@ using namespace std;
 
 int main(){
 
-    int rows=3,cols=5;
+    int rows=3,cols=4;
 
     int arr1[rows][cols]={
         {1,2,3,4,5},
@@ -11,7 +11,7 @@ int main(){
         {11,12,13,14,15}
     };
 
-    int top=0,right=4,bottom=2,left=0;
+    int top=0,right=3,bottom=2,left=0;
 
    while(top<=bottom && left<=right){
 
