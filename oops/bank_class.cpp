@@ -24,7 +24,7 @@ void depositMoney(double money){
 }
 
 void displayInfo(){
-    cout<<"Your remaining balance is : "<<balance<<endl;
+    cout<<"Your  balance is : "<<balance<<endl;
 }
 
 
