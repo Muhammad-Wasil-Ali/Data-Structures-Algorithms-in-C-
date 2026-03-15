@@ -28,6 +28,6 @@ int main(){
     Child c1;
     c1.grandParentInfo("wajid ali");
     c1.parent("ehsan ali");
-    c1.child("wasil ali");
+    c1.child("muhammad wasil ali");
     return 0;
 }
